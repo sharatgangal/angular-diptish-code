@@ -1,0 +1,116 @@
+2020-01-04 10:10:32 [main] INFO  o.s.b.t.c.SpringBootTestContextBootstrapper -
+				Neither @ContextConfiguration nor @ContextHierarchy found for test class [com.stackroute.keepnote.test.log.LoggerTest], using SpringBootContextLoader
+2020-01-04 10:10:32 [main] INFO  o.s.t.c.s.AbstractContextLoader -
+				Could not detect default resource locations for test class [com.stackroute.keepnote.test.log.LoggerTest]: no resource found for suffixes {-context.xml, Context.groovy}.
+2020-01-04 10:10:32 [main] INFO  o.s.t.c.s.AnnotationConfigContextLoaderUtils -
+				Could not detect default configuration classes for test class [com.stackroute.keepnote.test.log.LoggerTest]: LoggerTest does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+2020-01-04 10:10:32 [main] INFO  o.s.b.t.c.SpringBootTestContextBootstrapper -
+				Found @SpringBootConfiguration com.stackroute.keepnote.ReminderServiceApplication for test class com.stackroute.keepnote.test.log.LoggerTest
+2020-01-04 10:10:32 [main] INFO  o.s.b.t.c.SpringBootTestContextBootstrapper -
+				Loaded default TestExecutionListener class names from location [META-INF/spring.factories]: [org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener, org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExecutionListener, org.springframework.boot.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionListener, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcPrintOnlyOnFailureTestExecutionListener, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverTestExecutionListener, org.springframework.test.context.web.ServletTestExecutionListener, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener, org.springframework.test.context.support.DependencyInjectionTestExecutionListener, org.springframework.test.context.support.DirtiesContextTestExecutionListener, org.springframework.test.context.transaction.TransactionalTestExecutionListener, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener]
+2020-01-04 10:10:32 [main] INFO  o.s.b.t.c.SpringBootTestContextBootstrapper -
+				Using TestExecutionListeners: [org.springframework.test.context.web.ServletTestExecutionListener@4e3958e7, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener@77f80c04, org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener@1dac5ef, org.springframework.boot.test.autoconfigure.SpringBootDependencyInjectionTestExecutionListener@5c90e579, org.springframework.test.context.support.DirtiesContextTestExecutionListener@58ea606c, org.springframework.test.context.transaction.TransactionalTestExecutionListener@6f45df59, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener@38e79ae3, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener@63070bab, org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExecutionListener@68e5eea7, org.springframework.boot.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionListener@291b4bf5, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcPrintOnlyOnFailureTestExecutionListener@2d2ffcb7, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverTestExecutionListener@762ef0ea]
+2020-01-04 10:10:33 [main] INFO  c.s.keepnote.test.log.LoggerTest -
+				Starting LoggerTest on DESKTOP-229TM7J with PID 10620 (started by pt108 in C:\Users\pt108\Desktop\Assignments\KeepNote-Step6-Boilerplate\ReminderService)
+2020-01-04 10:10:33 [main] INFO  c.s.keepnote.test.log.LoggerTest -
+				No active profile set, falling back to default profiles: default
+2020-01-04 10:10:33 [main] INFO  o.s.w.c.s.GenericWebApplicationContext -
+				Refreshing org.springframework.web.context.support.GenericWebApplicationContext@aba625: startup date [Sat Jan 04 10:10:33 IST 2020]; root of context hierarchy
+2020-01-04 10:10:38 [Thread-3] INFO  o.s.b.a.mongo.embedded.EmbeddedMongo -
+				note: noprealloc may hurt performance in many applications
+2020-01-04 10:10:38 [Thread-3] INFO  o.s.b.a.mongo.embedded.EmbeddedMongo -
+				2020-01-04T10:10:38.660+0530 I CONTROL  [initandlisten] MongoDB starting : pid=10188 port=50354 dbpath=C:\Users\pt108\AppData\Local\Temp\embedmongo-db-0fcc724a-8e3f-46db-a08d-9eb09766d8ba 64-bit host=DESKTOP-229TM7J
+2020-01-04 10:10:38 [Thread-3] INFO  o.s.b.a.mongo.embedded.EmbeddedMongo -
+				2020-01-04T10:10:38.661+0530 I CONTROL  [initandlisten] targetMinOS: Windows Vista/Windows Server 2008
+2020-01-04 10:10:38 [Thread-3] INFO  o.s.b.a.mongo.embedded.EmbeddedMongo -
+				2020-01-04T10:10:38.661+0530 I CONTROL  [initandlisten] db version v3.2.2
+2020-01-04 10:10:38 [Thread-3] INFO  o.s.b.a.mongo.embedded.EmbeddedMongo -
+				2020-01-04T10:10:38.661+0530 I CONTROL  [initandlisten] git version: 6e71d0d568e134c029203593b00a0103e7cdf30b
+2020-01-04 10:10:38 [Thread-3] INFO  o.s.b.a.mongo.embedded.EmbeddedMongo -
+				2020-01-04T10:10:38.661+0530 I CONTROL  [initandlisten] allocator: tcmalloc
+2020-01-04 10:10:38 [Thread-3] INFO  o.s.b.a.mongo.embedded.EmbeddedMongo -
+				2020-01-04T10:10:38.661+0530 I CONTROL  [initandlisten] modules: none
+2020-01-04 10:10:38 [Thread-3] INFO  o.s.b.a.mongo.embedded.EmbeddedMongo -
+				2020-01-04T10:10:38.661+0530 I CONTROL  [initandlisten] build environment:
+2020-01-04 10:10:38 [Thread-3] INFO  o.s.b.a.mongo.embedded.EmbeddedMongo -
+				2020-01-04T10:10:38.661+0530 I CONTROL  [initandlisten]     distarch: x86_64
+2020-01-04 10:10:38 [Thread-3] INFO  o.s.b.a.mongo.embedded.EmbeddedMongo -
+				2020-01-04T10:10:38.661+0530 I CONTROL  [initandlisten]     target_arch: x86_64
+2020-01-04 10:10:38 [Thread-3] INFO  o.s.b.a.mongo.embedded.EmbeddedMongo -
+				2020-01-04T10:10:38.661+0530 I CONTROL  [initandlisten] options: { net: { bindIp: "127.0.0.1", http: { enabled: false }, port: 50354 }, security: { authorization: "disabled" }, storage: { dbPath: "C:\Users\pt108\AppData\Local\Temp\embedmongo-db-0fcc724a-8e3f-46db-a08d-9eb09766d8ba", journal: { enabled: false }, mmapv1: { preallocDataFiles: false, smallFiles: true }, syncPeriodSecs: 0.0 } }
+2020-01-04 10:10:38 [Thread-3] INFO  o.s.b.a.mongo.embedded.EmbeddedMongo -
+				2020-01-04T10:10:38.663+0530 I STORAGE  [initandlisten] wiredtiger_open config: create,cache_size=2G,session_max=20000,eviction=(threads_max=4),config_base=false,statistics=(fast),log=(enabled=true,archive=true,path=journal,compressor=snappy),file_manager=(close_idle_time=100000),checkpoint=(wait=0,log_size=2GB),statistics_log=(wait=0),,log=(enabled=false),
+2020-01-04 10:10:39 [Thread-3] INFO  o.s.b.a.mongo.embedded.EmbeddedMongo -
+				2020-01-04T10:10:39.370+0530 W STORAGE  [initandlisten] Detected configuration for non-active storage engine mmapv1 when current storage engine is wiredTiger
+2020-01-04 10:10:39 [Thread-3] INFO  o.s.b.a.mongo.embedded.EmbeddedMongo -
+				2020-01-04T10:10:39.373+0530 I NETWORK  [HostnameCanonicalizationWorker] Starting hostname canonicalization worker
+2020-01-04 10:10:39 [Thread-3] INFO  o.s.b.a.mongo.embedded.EmbeddedMongo -
+				2020-01-04T10:10:39.373+0530 I FTDC     [initandlisten] Initializing full-time diagnostic data capture with directory 'C:/Users/pt108/AppData/Local/Temp/embedmongo-db-0fcc724a-8e3f-46db-a08d-9eb09766d8ba/diagnostic.data'
+2020-01-04 10:10:39 [Thread-3] INFO  o.s.b.a.mongo.embedded.EmbeddedMongo -
+				2020-01-04T10:10:39.600+0530 I NETWORK  [initandlisten] waiting for connections on port 50354
+2020-01-04 10:10:39 [main] INFO  d.f.embed.process.runtime.Executable -
+				start de.flapdoodle.embed.mongo.config.MongodConfigBuilder$ImmutableMongodConfig@557286ad
+2020-01-04 10:10:40 [main] INFO  org.mongodb.driver.cluster -
+				Cluster created with settings {hosts=[localhost:50354], mode=MULTIPLE, requiredClusterType=UNKNOWN, serverSelectionTimeout='30000 ms', maxWaitQueueSize=500}
+2020-01-04 10:10:40 [main] INFO  org.mongodb.driver.cluster -
+				Adding discovered server localhost:50354 to client view of cluster
+2020-01-04 10:10:40 [Thread-3] INFO  o.s.b.a.mongo.embedded.EmbeddedMongo -
+				2020-01-04T10:10:40.323+0530 I NETWORK  [initandlisten] connection accepted from 127.0.0.1:50357 #1 (1 connection now open)
+2020-01-04 10:10:40 [cluster-ClusterId{value='5e1017483fb077297c7964f1', description='null'}-localhost:50354] INFO  org.mongodb.driver.connection -
+				Opened connection [connectionId{localValue:1, serverValue:1}] to localhost:50354
+2020-01-04 10:10:40 [cluster-ClusterId{value='5e1017483fb077297c7964f1', description='null'}-localhost:50354] INFO  org.mongodb.driver.cluster -
+				Monitor thread successfully connected to server with description ServerDescription{address=localhost:50354, type=STANDALONE, state=CONNECTED, ok=true, version=ServerVersion{versionList=[3, 2, 2]}, minWireVersion=0, maxWireVersion=4, maxDocumentSize=16777216, logicalSessionTimeoutMinutes=null, roundTripTimeNanos=4073400}
+2020-01-04 10:10:40 [cluster-ClusterId{value='5e1017483fb077297c7964f1', description='null'}-localhost:50354] INFO  org.mongodb.driver.cluster -
+				Discovered cluster type of STANDALONE
+2020-01-04 10:10:42 [main] INFO  o.s.w.s.h.SimpleUrlHandlerMapping -
+				Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2020-01-04 10:10:43 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerAdapter -
+				Looking for @ControllerAdvice: org.springframework.web.context.support.GenericWebApplicationContext@aba625: startup date [Sat Jan 04 10:10:33 IST 2020]; root of context hierarchy
+2020-01-04 10:10:44 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping -
+				Mapped "{[/api/v1/reminder/{id}],methods=[PUT]}" onto public org.springframework.http.ResponseEntity<?> com.stackroute.keepnote.controller.ReminderController.updateReminder(com.stackroute.keepnote.model.Reminder,java.lang.String)
+2020-01-04 10:10:44 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping -
+				Mapped "{[/api/v1/reminder/{id}],methods=[DELETE]}" onto public org.springframework.http.ResponseEntity<?> com.stackroute.keepnote.controller.ReminderController.deleteReminder(java.lang.String)
+2020-01-04 10:10:44 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping -
+				Mapped "{[/api/v1/reminder],methods=[GET]}" onto public org.springframework.http.ResponseEntity<?> com.stackroute.keepnote.controller.ReminderController.getAllReminder()
+2020-01-04 10:10:44 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping -
+				Mapped "{[/api/v1/reminder/{id}],methods=[GET]}" onto public org.springframework.http.ResponseEntity<?> com.stackroute.keepnote.controller.ReminderController.getReminderById(java.lang.String)
+2020-01-04 10:10:44 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping -
+				Mapped "{[/api/v1/reminder],methods=[POST]}" onto public org.springframework.http.ResponseEntity<?> com.stackroute.keepnote.controller.ReminderController.createReminder(com.stackroute.keepnote.model.Reminder)
+2020-01-04 10:10:44 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping -
+				Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2020-01-04 10:10:44 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping -
+				Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2020-01-04 10:10:44 [main] INFO  o.s.w.s.h.SimpleUrlHandlerMapping -
+				Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2020-01-04 10:10:44 [main] INFO  o.s.w.s.h.SimpleUrlHandlerMapping -
+				Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2020-01-04 10:10:44 [main] INFO  c.s.keepnote.test.log.LoggerTest -
+				Started LoggerTest in 11.861 seconds (JVM running for 14.249)
+2020-01-04 10:10:45 [Thread-3] INFO  o.s.b.a.mongo.embedded.EmbeddedMongo -
+				2020-01-04T10:10:45.444+0530 I NETWORK  [initandlisten] connection accepted from 127.0.0.1:50358 #2 (2 connections now open)
+2020-01-04 10:10:45 [Thread-5] INFO  o.s.w.c.s.GenericWebApplicationContext -
+				Closing org.springframework.web.context.support.GenericWebApplicationContext@aba625: startup date [Sat Jan 04 10:10:33 IST 2020]; root of context hierarchy
+2020-01-04 10:10:45 [Thread-3] INFO  o.s.b.a.mongo.embedded.EmbeddedMongo -
+				2020-01-04T10:10:45.470+0530 I NETWORK  [conn1] end connection 127.0.0.1:50357 (1 connection now open)
+2020-01-04 10:10:45 [Thread-3] INFO  o.s.b.a.mongo.embedded.EmbeddedMongo -
+				2020-01-04T10:10:45.478+0530 I COMMAND  [conn2] terminating, shutdown command received
+2020-01-04 10:10:45 [Thread-3] INFO  o.s.b.a.mongo.embedded.EmbeddedMongo -
+				2020-01-04T10:10:45.484+0530 I FTDC     [conn2] Shutting down full-time diagnostic data capture
+2020-01-04 10:10:45 [Thread-3] INFO  o.s.b.a.mongo.embedded.EmbeddedMongo -
+				2020-01-04T10:10:45.507+0530 I CONTROL  [conn2] now exiting
+2020-01-04 10:10:45 [Thread-3] INFO  o.s.b.a.mongo.embedded.EmbeddedMongo -
+				2020-01-04T10:10:45.508+0530 I NETWORK  [conn2] shutdown: going to close listening sockets...
+2020-01-04 10:10:45 [Thread-3] INFO  o.s.b.a.mongo.embedded.EmbeddedMongo -
+				2020-01-04T10:10:45.509+0530 I NETWORK  [conn2] closing listening socket: 712
+2020-01-04 10:10:45 [Thread-3] INFO  o.s.b.a.mongo.embedded.EmbeddedMongo -
+				2020-01-04T10:10:45.509+0530 I NETWORK  [conn2] shutdown: going to flush diaglog...
+2020-01-04 10:10:45 [Thread-3] INFO  o.s.b.a.mongo.embedded.EmbeddedMongo -
+				2020-01-04T10:10:45.510+0530 I NETWORK  [conn2] shutdown: going to close sockets...
+2020-01-04 10:10:45 [Thread-3] INFO  o.s.b.a.mongo.embedded.EmbeddedMongo -
+				2020-01-04T10:10:45.510+0530 I STORAGE  [conn2] WiredTigerKVEngine shutting down
+2020-01-04 10:10:45 [Thread-2] INFO  d.f.e.process.runtime.ProcessControl -
+				stopOrDestroyProcess: process has not exited 
+2020-01-04 10:10:45 [Thread-3] INFO  o.s.b.a.mongo.embedded.EmbeddedMongo -
+				2020-01-04T10:10:45.925+0530 I STORAGE  [conn2] shutdown: removing fs lock...
+2020-01-04 10:10:45 [Thread-3] INFO  o.s.b.a.mongo.embedded.EmbeddedMongo -
+				2020-01-04T10:10:45.927+0530 I CONTROL  [conn2] dbexit:  rc: 0

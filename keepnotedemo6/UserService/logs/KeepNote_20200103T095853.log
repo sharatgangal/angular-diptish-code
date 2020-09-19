@@ -1,0 +1,102 @@
+2020-01-03 09:58:53 [main] INFO  o.s.b.t.c.SpringBootTestContextBootstrapper -
+				Neither @ContextConfiguration nor @ContextHierarchy found for test class [com.stackroute.keepnote.test.repository.UserRepositoryTest], using SpringBootContextLoader
+2020-01-03 09:58:53 [main] INFO  o.s.t.c.s.AbstractContextLoader -
+				Could not detect default resource locations for test class [com.stackroute.keepnote.test.repository.UserRepositoryTest]: no resource found for suffixes {-context.xml, Context.groovy}.
+2020-01-03 09:58:53 [main] INFO  o.s.t.c.s.AnnotationConfigContextLoaderUtils -
+				Could not detect default configuration classes for test class [com.stackroute.keepnote.test.repository.UserRepositoryTest]: UserRepositoryTest does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+2020-01-03 09:58:53 [main] INFO  o.s.b.t.c.SpringBootTestContextBootstrapper -
+				Found @SpringBootConfiguration com.stackroute.keepnote.UserServiceApplication for test class com.stackroute.keepnote.test.repository.UserRepositoryTest
+2020-01-03 09:58:53 [main] INFO  o.s.b.t.c.SpringBootTestContextBootstrapper -
+				Loaded default TestExecutionListener class names from location [META-INF/spring.factories]: [org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener, org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExecutionListener, org.springframework.boot.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionListener, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcPrintOnlyOnFailureTestExecutionListener, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverTestExecutionListener, org.springframework.test.context.web.ServletTestExecutionListener, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener, org.springframework.test.context.support.DependencyInjectionTestExecutionListener, org.springframework.test.context.support.DirtiesContextTestExecutionListener, org.springframework.test.context.transaction.TransactionalTestExecutionListener, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener]
+2020-01-03 09:58:53 [main] INFO  o.s.b.t.c.SpringBootTestContextBootstrapper -
+				Using TestExecutionListeners: [org.springframework.test.context.web.ServletTestExecutionListener@16ec5519, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener@2f7298b, org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener@188715b5, org.springframework.boot.test.autoconfigure.SpringBootDependencyInjectionTestExecutionListener@1ea9f6af, org.springframework.test.context.support.DirtiesContextTestExecutionListener@6a192cfe, org.springframework.test.context.transaction.TransactionalTestExecutionListener@5119fb47, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener@7193666c, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener@20deea7f, org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExecutionListener@3835c46, org.springframework.boot.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionListener@1dde4cb2, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcPrintOnlyOnFailureTestExecutionListener@7714e963, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverTestExecutionListener@20ce78ec]
+2020-01-03 09:58:54 [main] INFO  c.s.k.t.r.UserRepositoryTest -
+				Starting UserRepositoryTest on ip-172-31-41-20 with PID 4647 (started by ubuntu in /home/ubuntu/Desktop/Spring/KeepNote-Step6-Boilerplate/UserService)
+2020-01-03 09:58:54 [main] INFO  c.s.k.t.r.UserRepositoryTest -
+				No active profile set, falling back to default profiles: default
+2020-01-03 09:58:54 [main] INFO  o.s.c.a.AnnotationConfigApplicationContext -
+				Refreshing org.springframework.context.annotation.AnnotationConfigApplicationContext@7d322cad: startup date [Fri Jan 03 09:58:54 UTC 2020]; root of context hierarchy
+2020-01-03 09:58:57 [Thread-3] INFO  o.s.b.a.mongo.embedded.EmbeddedMongo -
+				note: noprealloc may hurt performance in many applications
+2020-01-03 09:58:57 [Thread-3] INFO  o.s.b.a.mongo.embedded.EmbeddedMongo -
+				2020-01-03T09:58:57.123+0000 I CONTROL  [initandlisten] MongoDB starting : pid=4669 port=36637 dbpath=/tmp/embedmongo-db-a79bd389-4786-4dce-ba0d-ec15b5ca4be1 64-bit host=ip-172-31-41-20
+2020-01-03 09:58:57 [Thread-3] INFO  o.s.b.a.mongo.embedded.EmbeddedMongo -
+				2020-01-03T09:58:57.123+0000 I CONTROL  [initandlisten] db version v3.2.2
+2020-01-03 09:58:57 [Thread-3] INFO  o.s.b.a.mongo.embedded.EmbeddedMongo -
+				2020-01-03T09:58:57.123+0000 I CONTROL  [initandlisten] git version: 6e71d0d568e134c029203593b00a0103e7cdf30b
+2020-01-03 09:58:57 [Thread-3] INFO  o.s.b.a.mongo.embedded.EmbeddedMongo -
+				2020-01-03T09:58:57.123+0000 I CONTROL  [initandlisten] allocator: tcmalloc
+2020-01-03 09:58:57 [Thread-3] INFO  o.s.b.a.mongo.embedded.EmbeddedMongo -
+				2020-01-03T09:58:57.123+0000 I CONTROL  [initandlisten] modules: none
+2020-01-03 09:58:57 [Thread-3] INFO  o.s.b.a.mongo.embedded.EmbeddedMongo -
+				2020-01-03T09:58:57.123+0000 I CONTROL  [initandlisten] build environment:
+2020-01-03 09:58:57 [Thread-3] INFO  o.s.b.a.mongo.embedded.EmbeddedMongo -
+				2020-01-03T09:58:57.123+0000 I CONTROL  [initandlisten]     distarch: x86_64
+2020-01-03 09:58:57 [Thread-3] INFO  o.s.b.a.mongo.embedded.EmbeddedMongo -
+				2020-01-03T09:58:57.123+0000 I CONTROL  [initandlisten]     target_arch: x86_64
+2020-01-03 09:58:57 [Thread-3] INFO  o.s.b.a.mongo.embedded.EmbeddedMongo -
+				2020-01-03T09:58:57.123+0000 I CONTROL  [initandlisten] options: { net: { bindIp: "127.0.0.1", http: { enabled: false }, port: 36637 }, security: { authorization: "disabled" }, storage: { dbPath: "/tmp/embedmongo-db-a79bd389-4786-4dce-ba0d-ec15b5ca4be1", journal: { enabled: false }, mmapv1: { preallocDataFiles: false, smallFiles: true }, syncPeriodSecs: 0.0 } }
+2020-01-03 09:58:57 [Thread-3] INFO  o.s.b.a.mongo.embedded.EmbeddedMongo -
+				2020-01-03T09:58:57.149+0000 I STORAGE  [initandlisten] wiredtiger_open config: create,cache_size=4G,session_max=20000,eviction=(threads_max=4),config_base=false,statistics=(fast),log=(enabled=true,archive=true,path=journal,compressor=snappy),file_manager=(close_idle_time=100000),checkpoint=(wait=0,log_size=2GB),statistics_log=(wait=0),,log=(enabled=false),
+2020-01-03 09:58:57 [Thread-3] INFO  o.s.b.a.mongo.embedded.EmbeddedMongo -
+				2020-01-03T09:58:57.200+0000 W STORAGE  [initandlisten] Detected configuration for non-active storage engine mmapv1 when current storage engine is wiredTiger
+2020-01-03 09:58:57 [Thread-3] INFO  o.s.b.a.mongo.embedded.EmbeddedMongo -
+				2020-01-03T09:58:57.200+0000 I FTDC     [initandlisten] Initializing full-time diagnostic data capture with directory '/tmp/embedmongo-db-a79bd389-4786-4dce-ba0d-ec15b5ca4be1/diagnostic.data'
+2020-01-03 09:58:57 [Thread-3] INFO  o.s.b.a.mongo.embedded.EmbeddedMongo -
+				2020-01-03T09:58:57.201+0000 I NETWORK  [HostnameCanonicalizationWorker] Starting hostname canonicalization worker
+2020-01-03 09:58:57 [Thread-3] INFO  o.s.b.a.mongo.embedded.EmbeddedMongo -
+				2020-01-03T09:58:57.215+0000 I NETWORK  [initandlisten] waiting for connections on port 36637
+2020-01-03 09:58:57 [main] INFO  d.f.embed.process.runtime.Executable -
+				start de.flapdoodle.embed.mongo.config.MongodConfigBuilder$ImmutableMongodConfig@62417a16
+2020-01-03 09:58:57 [main] INFO  org.mongodb.driver.cluster -
+				Cluster created with settings {hosts=[localhost:36637], mode=MULTIPLE, requiredClusterType=UNKNOWN, serverSelectionTimeout='30000 ms', maxWaitQueueSize=500}
+2020-01-03 09:58:57 [main] INFO  org.mongodb.driver.cluster -
+				Adding discovered server localhost:36637 to client view of cluster
+2020-01-03 09:58:57 [Thread-3] INFO  o.s.b.a.mongo.embedded.EmbeddedMongo -
+				2020-01-03T09:58:57.506+0000 I NETWORK  [initandlisten] connection accepted from 127.0.0.1:51446 #1 (1 connection now open)
+2020-01-03 09:58:57 [cluster-ClusterId{value='5e0f1061015fb81227edadb9', description='null'}-localhost:36637] INFO  org.mongodb.driver.connection -
+				Opened connection [connectionId{localValue:1, serverValue:1}] to localhost:36637
+2020-01-03 09:58:57 [cluster-ClusterId{value='5e0f1061015fb81227edadb9', description='null'}-localhost:36637] INFO  org.mongodb.driver.cluster -
+				Monitor thread successfully connected to server with description ServerDescription{address=localhost:36637, type=STANDALONE, state=CONNECTED, ok=true, version=ServerVersion{versionList=[3, 2, 2]}, minWireVersion=0, maxWireVersion=4, maxDocumentSize=16777216, logicalSessionTimeoutMinutes=null, roundTripTimeNanos=3012050}
+2020-01-03 09:58:57 [cluster-ClusterId{value='5e0f1061015fb81227edadb9', description='null'}-localhost:36637] INFO  org.mongodb.driver.cluster -
+				Discovered cluster type of STANDALONE
+2020-01-03 09:58:58 [main] INFO  c.s.k.t.r.UserRepositoryTest -
+				Started UserRepositoryTest in 4.091 seconds (JVM running for 5.207)
+2020-01-03 09:58:58 [Thread-3] INFO  o.s.b.a.mongo.embedded.EmbeddedMongo -
+				2020-01-03T09:58:58.215+0000 I NETWORK  [initandlisten] connection accepted from 127.0.0.1:51448 #2 (2 connections now open)
+2020-01-03 09:58:58 [main] INFO  org.mongodb.driver.connection -
+				Opened connection [connectionId{localValue:2, serverValue:2}] to localhost:36637
+2020-01-03 09:58:58 [Thread-5] INFO  o.s.c.a.AnnotationConfigApplicationContext -
+				Closing org.springframework.context.annotation.AnnotationConfigApplicationContext@7d322cad: startup date [Fri Jan 03 09:58:54 UTC 2020]; root of context hierarchy
+2020-01-03 09:58:58 [Thread-5] INFO  org.mongodb.driver.connection -
+				Closed connection [connectionId{localValue:2, serverValue:2}] to localhost:36637 because the pool has been closed.
+2020-01-03 09:58:58 [Thread-3] INFO  o.s.b.a.mongo.embedded.EmbeddedMongo -
+				2020-01-03T09:58:58.327+0000 I NETWORK  [initandlisten] connection accepted from 127.0.0.1:51450 #3 (3 connections now open)
+2020-01-03 09:58:58 [Thread-3] INFO  o.s.b.a.mongo.embedded.EmbeddedMongo -
+				2020-01-03T09:58:58.330+0000 I COMMAND  [conn3] terminating, shutdown command received
+2020-01-03 09:58:58 [Thread-3] INFO  o.s.b.a.mongo.embedded.EmbeddedMongo -
+				2020-01-03T09:58:58.330+0000 I FTDC     [conn3] Shutting down full-time diagnostic data capture
+2020-01-03 09:58:58 [Thread-3] INFO  o.s.b.a.mongo.embedded.EmbeddedMongo -
+				2020-01-03T09:58:58.334+0000 I CONTROL  [conn3] now exiting
+2020-01-03 09:58:58 [Thread-3] INFO  o.s.b.a.mongo.embedded.EmbeddedMongo -
+				2020-01-03T09:58:58.334+0000 I NETWORK  [conn3] shutdown: going to close listening sockets...
+2020-01-03 09:58:58 [Thread-3] INFO  o.s.b.a.mongo.embedded.EmbeddedMongo -
+				2020-01-03T09:58:58.334+0000 I NETWORK  [conn3] closing listening socket: 5
+2020-01-03 09:58:58 [Thread-3] INFO  o.s.b.a.mongo.embedded.EmbeddedMongo -
+				2020-01-03T09:58:58.334+0000 I NETWORK  [conn3] closing listening socket: 6
+2020-01-03 09:58:58 [Thread-3] INFO  o.s.b.a.mongo.embedded.EmbeddedMongo -
+				2020-01-03T09:58:58.334+0000 I NETWORK  [conn3] removing socket file: /tmp/mongodb-36637.sock
+2020-01-03 09:58:58 [Thread-3] INFO  o.s.b.a.mongo.embedded.EmbeddedMongo -
+				2020-01-03T09:58:58.334+0000 I NETWORK  [conn3] shutdown: going to flush diaglog...
+2020-01-03 09:58:58 [Thread-3] INFO  o.s.b.a.mongo.embedded.EmbeddedMongo -
+				2020-01-03T09:58:58.334+0000 I NETWORK  [conn3] shutdown: going to close sockets...
+2020-01-03 09:58:58 [Thread-3] INFO  o.s.b.a.mongo.embedded.EmbeddedMongo -
+				2020-01-03T09:58:58.334+0000 I STORAGE  [conn3] WiredTigerKVEngine shutting down
+2020-01-03 09:58:58 [Thread-3] INFO  o.s.b.a.mongo.embedded.EmbeddedMongo -
+				2020-01-03T09:58:58.335+0000 I NETWORK  [conn2] end connection 127.0.0.1:51448 (2 connections now open)
+2020-01-03 09:58:58 [Thread-3] INFO  o.s.b.a.mongo.embedded.EmbeddedMongo -
+				2020-01-03T09:58:58.335+0000 I NETWORK  [conn1] end connection 127.0.0.1:51446 (2 connections now open)
+2020-01-03 09:58:58 [Thread-3] INFO  o.s.b.a.mongo.embedded.EmbeddedMongo -
+				2020-01-03T09:58:58.350+0000 I STORAGE  [conn3] shutdown: removing fs lock...
+2020-01-03 09:58:58 [Thread-3] INFO  o.s.b.a.mongo.embedded.EmbeddedMongo -
+				2020-01-03T09:58:58.350+0000 I CONTROL  [conn3] dbexit:  rc: 0

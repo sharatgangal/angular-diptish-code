@@ -1,0 +1,40 @@
+<label class="error-message">{{ errMessage }}</label>
+
+<!-- Note Taker -->
+<div class="keep-c-expansion-panel-wrapper">
+  <mat-expansion-panel>
+    <mat-expansion-panel-header>
+      <mat-panel-title>
+        Take a note
+      </mat-panel-title>
+    </mat-expansion-panel-header>
+    <div class="keep-c-note-taker-wrapper">
+      <mat-form-field>
+        <!-- [] = Property Bindings - Assign values to the element -->
+        <!-- () = Event Bindings - Broadcast values to the outside world -->
+        <!-- value is an attribute -->
+        <!-- <input type="text" value="Bob"> -->
+        <!--value is a DOM property -->
+        <input [(ngModel)]="note.title"  matInput placeholder="Title" name="title" type="text">
+      </mat-form-field>
+      <mat-form-field>
+        <textarea [(ngModel)]="note.text" matInput placeholder="Text" name="text"></textarea>
+      </mat-form-field>
+      <div class="keep-c-done-wrapper">
+        <button mat-button (click)="takeNotes()">Done</button>
+      </div>
+      <!-- {{}} = Interpolation -->
+      <!-- <h1>{{title}}</h1> -->
+    </div>
+  </mat-expansion-panel>
+</div>
+
+<!-- Note Container -->
+<div class="keep-c-note-container">
+  <mat-card class="keep-c-note" *ngFor="let note of notes">
+    <mat-card-title>{{note.title}}</mat-card-title>
+    <mat-card-content>
+      <p>{{note.text}}</p>
+    </mat-card-content>
+  </mat-card>
+</div>

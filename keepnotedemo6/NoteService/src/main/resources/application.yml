@@ -1,0 +1,10 @@
+spring:
+  data:
+    mongodb:
+      database: test
+      port: 27017
+      host: localhost
+  application:
+    name: note-service
+server:
+  port: 8084

@@ -1,0 +1,116 @@
+2020-01-08 22:33:19 [main] INFO  c.s.keepnote.UserServiceApplication -
+				Starting UserServiceApplication on DESKTOP-229TM7J with PID 5368 (C:\Users\pt108\Desktop\keepnote-final-integration\KeepNote-Step6-Boilerplate\UserService\target\classes started by pt108 in C:\Users\pt108\Desktop\keepnote-final-integration\KeepNote-Step6-Boilerplate\UserService)
+2020-01-08 22:33:19 [main] INFO  c.s.keepnote.UserServiceApplication -
+				No active profile set, falling back to default profiles: default
+2020-01-08 22:33:19 [main] INFO  o.s.b.w.s.c.AnnotationConfigServletWebServerApplicationContext -
+				Refreshing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@72d1ad2e: startup date [Wed Jan 08 22:33:19 IST 2020]; root of context hierarchy
+2020-01-08 22:33:21 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer -
+				Tomcat initialized with port(s): 8081 (http)
+2020-01-08 22:33:21 [main] INFO  o.a.coyote.http11.Http11NioProtocol -
+				Initializing ProtocolHandler ["http-nio-8081"]
+2020-01-08 22:33:21 [main] INFO  o.a.catalina.core.StandardService -
+				Starting service [Tomcat]
+2020-01-08 22:33:21 [main] INFO  o.a.catalina.core.StandardEngine -
+				Starting Servlet Engine: Apache Tomcat/8.5.31
+2020-01-08 22:33:21 [localhost-startStop-1] INFO  o.a.c.core.AprLifecycleListener -
+				The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: [C:\Program Files\Java\jdk1.8.0_231\bin;C:\WINDOWS\Sun\Java\bin;C:\WINDOWS\system32;C:\WINDOWS;C:/Program Files/Java/jre1.8.0_231/bin/server;C:/Program Files/Java/jre1.8.0_231/bin;C:/Program Files/Java/jre1.8.0_231/lib/amd64;C:\Program Files (x86)\Common Files\Oracle\Java\javapath;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\WINDOWS\System32\OpenSSH\;C:\Program Files\Java\jdk1.8.0_231\bin;C:\Program Files\Git\cmd;C:\Program Files\nodejs\;C:\Program Files\dotnet\;C:\Program Files (x86)\dotnet\;C:\Program Files\MongoDB\Server\4.2\bin;C:\Program Files\MySQL\MySQL Shell 8.0\bin\;C:\Users\pt108\AppData\Local\Microsoft\WindowsApps;C:\Users\pt108\AppData\Local\Programs\Microsoft VS Code\bin;C:\Users\pt108\AppData\Roaming\npm;C:\Program Files\MongoDB\Server\4.2\bin;;C:\Users\pt108\Desktop;;.]
+2020-01-08 22:33:22 [localhost-startStop-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] -
+				Initializing Spring embedded WebApplicationContext
+2020-01-08 22:33:22 [localhost-startStop-1] INFO  o.s.web.context.ContextLoader -
+				Root WebApplicationContext: initialization completed in 2908 ms
+2020-01-08 22:33:22 [localhost-startStop-1] INFO  o.s.b.w.s.FilterRegistrationBean -
+				Mapping filter: 'characterEncodingFilter' to: [/*]
+2020-01-08 22:33:22 [localhost-startStop-1] INFO  o.s.b.w.s.FilterRegistrationBean -
+				Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2020-01-08 22:33:22 [localhost-startStop-1] INFO  o.s.b.w.s.FilterRegistrationBean -
+				Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2020-01-08 22:33:22 [localhost-startStop-1] INFO  o.s.b.w.s.FilterRegistrationBean -
+				Mapping filter: 'requestContextFilter' to: [/*]
+2020-01-08 22:33:22 [localhost-startStop-1] INFO  o.s.b.w.s.FilterRegistrationBean -
+				Mapping filter: 'jwtFilter' to urls: [/api/v1/*]
+2020-01-08 22:33:22 [localhost-startStop-1] INFO  o.s.b.w.s.ServletRegistrationBean -
+				Servlet dispatcherServlet mapped to [/]
+2020-01-08 22:33:23 [main] INFO  org.mongodb.driver.cluster -
+				Cluster created with settings {hosts=[localhost:27017], mode=MULTIPLE, requiredClusterType=UNKNOWN, serverSelectionTimeout='30000 ms', maxWaitQueueSize=500}
+2020-01-08 22:33:23 [main] INFO  org.mongodb.driver.cluster -
+				Adding discovered server localhost:27017 to client view of cluster
+2020-01-08 22:33:23 [cluster-ClusterId{value='5e160b5b3fb07714f8906137', description='null'}-localhost:27017] INFO  org.mongodb.driver.connection -
+				Opened connection [connectionId{localValue:1, serverValue:4}] to localhost:27017
+2020-01-08 22:33:23 [cluster-ClusterId{value='5e160b5b3fb07714f8906137', description='null'}-localhost:27017] INFO  org.mongodb.driver.cluster -
+				Monitor thread successfully connected to server with description ServerDescription{address=localhost:27017, type=STANDALONE, state=CONNECTED, ok=true, version=ServerVersion{versionList=[4, 2, 2]}, minWireVersion=0, maxWireVersion=8, maxDocumentSize=16777216, logicalSessionTimeoutMinutes=30, roundTripTimeNanos=6160300}
+2020-01-08 22:33:23 [cluster-ClusterId{value='5e160b5b3fb07714f8906137', description='null'}-localhost:27017] INFO  org.mongodb.driver.cluster -
+				Discovered cluster type of STANDALONE
+2020-01-08 22:33:24 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping -
+				Mapped "{[/]}" onto public java.lang.String com.stackroute.keepnote.controller.RootController.swaggerUI()
+2020-01-08 22:33:24 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping -
+				Mapped "{[/api/v1/user/{id}],methods=[GET]}" onto public org.springframework.http.ResponseEntity<?> com.stackroute.keepnote.controller.UserController.showUserDetails(java.lang.String)
+2020-01-08 22:33:24 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping -
+				Mapped "{[/api/v1/user/{id}],methods=[PUT]}" onto public org.springframework.http.ResponseEntity<?> com.stackroute.keepnote.controller.UserController.updateUser(com.stackroute.keepnote.model.User,java.lang.String)
+2020-01-08 22:33:24 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping -
+				Mapped "{[/api/v1/user/{id}],methods=[DELETE]}" onto public org.springframework.http.ResponseEntity<?> com.stackroute.keepnote.controller.UserController.deleteUser(java.lang.String)
+2020-01-08 22:33:24 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping -
+				Mapped "{[/api/v1/user],methods=[POST]}" onto public org.springframework.http.ResponseEntity<?> com.stackroute.keepnote.controller.UserController.createUser(com.stackroute.keepnote.model.User)
+2020-01-08 22:33:24 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping -
+				Mapped "{[/swagger-resources/configuration/security]}" onto public org.springframework.http.ResponseEntity<springfox.documentation.swagger.web.SecurityConfiguration> springfox.documentation.swagger.web.ApiResourceController.securityConfiguration()
+2020-01-08 22:33:24 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping -
+				Mapped "{[/swagger-resources]}" onto public org.springframework.http.ResponseEntity<java.util.List<springfox.documentation.swagger.web.SwaggerResource>> springfox.documentation.swagger.web.ApiResourceController.swaggerResources()
+2020-01-08 22:33:24 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping -
+				Mapped "{[/swagger-resources/configuration/ui]}" onto public org.springframework.http.ResponseEntity<springfox.documentation.swagger.web.UiConfiguration> springfox.documentation.swagger.web.ApiResourceController.uiConfiguration()
+2020-01-08 22:33:24 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping -
+				Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2020-01-08 22:33:24 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping -
+				Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2020-01-08 22:33:25 [main] INFO  s.d.s.w.PropertySourcedRequestMappingHandlerMapping -
+				Mapped URL path [/v2/api-docs] onto method [public org.springframework.http.ResponseEntity<springfox.documentation.spring.web.json.Json> springfox.documentation.swagger2.web.Swagger2Controller.getDocumentation(java.lang.String,javax.servlet.http.HttpServletRequest)]
+2020-01-08 22:33:25 [main] INFO  o.s.w.s.h.SimpleUrlHandlerMapping -
+				Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2020-01-08 22:33:25 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerAdapter -
+				Looking for @ControllerAdvice: org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@72d1ad2e: startup date [Wed Jan 08 22:33:19 IST 2020]; root of context hierarchy
+2020-01-08 22:33:25 [main] INFO  o.s.w.s.h.SimpleUrlHandlerMapping -
+				Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2020-01-08 22:33:25 [main] INFO  o.s.w.s.h.SimpleUrlHandlerMapping -
+				Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2020-01-08 22:33:26 [main] INFO  o.s.j.e.a.AnnotationMBeanExporter -
+				Registering beans for JMX exposure on startup
+2020-01-08 22:33:26 [main] INFO  o.s.c.s.DefaultLifecycleProcessor -
+				Starting beans in phase 2147483647
+2020-01-08 22:33:26 [main] INFO  s.d.s.w.p.DocumentationPluginsBootstrapper -
+				Context refreshed
+2020-01-08 22:33:26 [main] INFO  s.d.s.w.p.DocumentationPluginsBootstrapper -
+				Found 1 custom documentation plugin(s)
+2020-01-08 22:33:26 [main] INFO  s.d.s.w.s.ApiListingReferenceScanner -
+				Scanning for api listing references
+2020-01-08 22:33:26 [main] INFO  o.a.coyote.http11.Http11NioProtocol -
+				Starting ProtocolHandler ["http-nio-8081"]
+2020-01-08 22:33:26 [main] INFO  o.a.tomcat.util.net.NioSelectorPool -
+				Using a shared selector for servlet write/read
+2020-01-08 22:33:26 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer -
+				Tomcat started on port(s): 8081 (http) with context path ''
+2020-01-08 22:33:26 [main] INFO  c.s.keepnote.UserServiceApplication -
+				Started UserServiceApplication in 7.963 seconds (JVM running for 9.33)
+2020-01-08 22:36:29 [http-nio-8081-exec-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] -
+				Initializing Spring FrameworkServlet 'dispatcherServlet'
+2020-01-08 22:36:29 [http-nio-8081-exec-1] INFO  o.s.web.servlet.DispatcherServlet -
+				FrameworkServlet 'dispatcherServlet': initialization started
+2020-01-08 22:36:29 [http-nio-8081-exec-1] INFO  o.s.web.servlet.DispatcherServlet -
+				FrameworkServlet 'dispatcherServlet': initialization completed in 71 ms
+2020-01-08 22:36:29 [http-nio-8081-exec-1] INFO  c.s.keepnote.aspectj.LoggingAspect -
+				-------@Before("beforeController()"----------String com.stackroute.keepnote.controller.RootController.swaggerUI()
+2020-01-08 22:36:29 [http-nio-8081-exec-1] INFO  c.s.keepnote.aspectj.LoggingAspect -
+				----------@After(afterController()String com.stackroute.keepnote.controller.RootController.swaggerUI()
+2020-01-08 22:36:29 [http-nio-8081-exec-1] INFO  c.s.keepnote.aspectj.LoggingAspect -
+				----@AfterReturning---redirect:/swagger-ui.html
+2020-01-08 22:36:31 [http-nio-8081-exec-3] INFO  c.s.keepnote.aspectj.LoggingAspect -
+				-------@Before("beforeController()"----------String com.stackroute.keepnote.controller.RootController.swaggerUI()
+2020-01-08 22:36:31 [http-nio-8081-exec-3] INFO  c.s.keepnote.aspectj.LoggingAspect -
+				----------@After(afterController()String com.stackroute.keepnote.controller.RootController.swaggerUI()
+2020-01-08 22:36:31 [http-nio-8081-exec-3] INFO  c.s.keepnote.aspectj.LoggingAspect -
+				----@AfterReturning---redirect:/swagger-ui.html
+2020-01-08 22:42:44 [RMI TCP Connection(9)-127.0.0.1] INFO  o.s.b.a.SpringApplicationAdminMXBeanRegistrar$SpringApplicationAdmin -
+				Application shutdown requested.
+2020-01-08 22:42:44 [RMI TCP Connection(9)-127.0.0.1] INFO  o.s.b.w.s.c.AnnotationConfigServletWebServerApplicationContext -
+				Closing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@72d1ad2e: startup date [Wed Jan 08 22:33:19 IST 2020]; root of context hierarchy
+2020-01-08 22:42:44 [RMI TCP Connection(9)-127.0.0.1] INFO  o.s.c.s.DefaultLifecycleProcessor -
+				Stopping beans in phase 2147483647
+2020-01-08 22:42:44 [RMI TCP Connection(9)-127.0.0.1] INFO  o.s.j.e.a.AnnotationMBeanExporter -
+				Unregistering JMX-exposed beans on shutdown

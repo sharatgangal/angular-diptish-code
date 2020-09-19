@@ -1,0 +1,73 @@
+version: '3'
+services:
+  user-auth:
+    image: user-auth
+    build: UserAuthentication-Service/
+    restart: always
+    network_mode: host
+    ports:
+      - 8082:8082
+    depends_on:
+      - user-mysql
+
+  reminder-service:
+    image: reminder-app
+    build: ReminderService/
+    restart: always
+    network_mode: host
+    ports:
+        - 8083:8083
+    depends_on:
+        - mongo-service
+
+  note-service:
+    image: note-app
+    build: NoteService/
+    restart: always
+    network_mode: host
+    ports:
+      - 8084:8084
+    depends_on:
+      - mongo-service
+
+  category-service:
+     image: category-app
+     build: CategoryService/
+     restart: always
+     network_mode: host
+     ports:
+       - 8085:8085
+     depends_on:
+       - mongo-service
+
+  user-service:
+     image: user-app
+     build: UserService/
+     restart: always
+     network_mode: host
+     ports:
+       - 8081:8081
+     depends_on:
+       - mongo-service
+
+  user-mysql:
+    image: mysql:latest
+    restart: always
+    network_mode: host
+    ports:
+      - 3306:3306
+    environment:
+      #MYSQL_ROOT_PASSWORD: root
+      MYSQL_USER: root
+      MYSQL_PASSWORD: root
+      MYSQL_DATABASE: keepnote6
+
+  mongo-service:
+      image: mongo:latest
+      command: mongod
+      network_mode: host
+      restart: always
+      volumes:
+        - /data/dump:/data/db
+      ports:
+        - 27017:27017

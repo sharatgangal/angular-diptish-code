@@ -1,0 +1,11 @@
+spring:
+  data:
+    mongodb:
+#      authentication-database: dbAdmin
+       database: keepnote6
+       port: 27017
+       host: localhost
+  application:
+    name: user-service
+server:
+  port: 8081

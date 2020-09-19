@@ -1,0 +1,15 @@
+<div class="login-c-form-wrapper">
+  <form class="login-form" (submit)='loginSubmit()' >
+  <mat-form-field>
+    <input class="username" matInput [formControl]='username'>
+    <mat-error *ngIf = 'username.invalid'>{{getErrorMessage()}}</mat-error>
+  </mat-form-field>
+
+  <mat-form-field>
+    <input class="password" matInput type = 'password' [formControl]='password'>
+    <mat-error *ngIf = 'password.invalid'>{{getErrorMessage()}}</mat-error>
+  </mat-form-field>
+  <button type="submit" mat-button>Submit</button>
+  <mat-error *ngIf = 'submitMessage' class="error-message">{{submitMessage}}</mat-error>
+</form>
+</div>
